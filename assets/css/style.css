@@ -1,0 +1,141 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=DM+Serif+Display:ital@0;1&family=Krona+One&family=Lexend:wght@100;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=PT+Sans+Caption:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Teko:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* font-family: 'Cinzel', serif;
+font-family: 'DM Serif Display', serif;
+font-family: 'Krona One', sans-serif;
+font-family: 'Lexend', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Sans Caption', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Teko', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Unna', serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --darkblue: #051924;
+    --cyan: #5bc0eb;
+    --lightblue: #00c2ff;
+    --blue: #3783BE;
+    --darkgreen: #157145;
+    --lightgreen: #56e39f;
+    --gunmetal: #223843;
+    --babypowder: #FFFFFC;
+}
+
+body {
+    background: var(--darkblue);
+    color: var(--babypowder);
+}
+
+body, button {
+    font-family: 'Teko';
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 2.5em;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 2em;
+    background: var(--babypowder);
+    color: var(--darkblue);
+    font-weight: 600;
+    font-size: 1em;
+    /* border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px; */
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5em;
+}
+
+.mountainIsland {
+    background: linear-gradient(
+15deg
+,rgb(91 192 235 / 65%),rgb(40 106 140 / 65%)),url(./images/Island.jpg);
+    background-size: cover;
+    background-position: 50% 57%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 0;
+    font-size: 2em;
+    width: 55vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: .3em 0;
+    width: 95%;
+    grid-gap: .7em;
+    max-width: 48vw;
+}
+
+.buttonContainerHeader {
+    grid-gap: 0;
+    width: 100%;
+    max-width: none;
+    height: 2.5em;
+    font-size: 1.7em;
+    padding: 0;
+    background: linear-gradient( 
+90deg
+ , var(--darkblue), white, white, white, var(--cyan));
+    grid-gap: .2em;
+}
+
+.buttonContainerHeader button {
+    border: none;
+}
+
+button {
+    background: var(--cyan);
+    outline: none;
+    padding: .5em 3em;
+    color: #fff;
+    font-size: .8em;
+    font-weight: 600;
+    transition: 150ms ease-in-out;
+    transform: skewx(
+-20deg
+);
+    width: 100%;
+    border: 4px solid #fff;
+}
+
+main h1 {
+    font-size: 3.5em;
+}
+
+.logInButton {
+    background: var(--darkblue);
+    border: 4px solid #fff;
+}
