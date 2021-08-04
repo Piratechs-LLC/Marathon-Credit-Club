@@ -46,7 +46,17 @@ body, button {
 
 h1 {
     font-weight: 500;
-    font-size: 2.5em;
+    font-size: 4.5em;
+    text-align: center;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.3em;
+    padding: 1em 0;
+    width: 39%;
+    text-align: center;
+    font-family: lexend;
 }
 
 header {
@@ -56,12 +66,26 @@ header {
     align-content: center;
     align-items: center;
     height: 2em;
-    background: var(--babypowder);
-    color: var(--darkblue);
+    background: var(--darkblue);
+    color: var(--babypowder);
     font-weight: 600;
     font-size: 1em;
     /* border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px; */
+}
+
+hr {
+    width: 25%;
+    border-width: 2px;
+    border-style: solid;
+    margin-bottom: 2em;
+    border-radius: 25px;
+    border-color: var(--cyan);
+}
+
+.logo {
+    width: 8%;
+    margin-bottom: -0.2em;
 }
 
 .topBar {
@@ -71,10 +95,15 @@ header {
     padding: 0 5em;
 }
 
+.lineSep {
+    color: var(--blue);
+    font-weight: 300;
+}
+
 .mountainIsland {
     background: linear-gradient(15deg,rgb(91 192 235 / 65%),rgb(40 106 140 / 65%)),url(./images/Island.jpg);
     background-size: cover;
-    background-position: 50% 57%;
+    background-position: 50% 31%;
 }
 
 main {
@@ -82,7 +111,7 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 4em 0;
+    padding: 2em 0;
     font-size: 2em;
     width: 55vw;
     margin: 0 auto;
@@ -105,10 +134,10 @@ main {
     height: 2.5em;
     font-size: 1.7em;
     padding: 0;
-    background: linear-gradient( 90deg , var(--blue), white, white, white, var(--blue));
+    background: linear-gradient( 90deg , var(--blue), var(--babypowder), var(--babypowder), var(--babypowder), var(--blue));
     grid-gap: .2em;
-    border-top: solid 5px white;
-    border-bottom: 5px solid #fff;
+    border-top: solid 5px var(--babypowder);
+    border-bottom: 5px solid var(--babypowder);
 }
 
 .buttonContainerHeader button {
@@ -120,20 +149,28 @@ button {
     background: var(--cyan);
     outline: none;
     padding: .5em 3em;
-    color: #fff;
+    color: var(--babypowder);
     font-size: .8em;
     font-weight: 600;
     transition: 150ms ease-in-out;
     transform: skewx(-20deg);
     width: 100%;
-    border: 4px solid #fff;
+    border: 5px solid var(--babypowder);
 }
 
 main h1 {
     font-size: 3.5em;
+    font-style: italic;
 }
 
 .logInButton {
     background: var(--darkblue);
-    border: 4px solid #fff;
+}
+
+.introText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 0;
+    flex-direction: column;
 }
