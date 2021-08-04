@@ -75,7 +75,7 @@ header {
     color: var(--babypowder);
     font-weight: 600;
     font-size: 1em;
-    border-bottom: solid 5px var(--babypowder);
+    border-bottom: solid 3px var(--babypowder);
 }
 
 hr {
@@ -171,6 +171,16 @@ main h1 {
     background: var(--darkblue);
 }
 
+.horizontalRule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerText {
+    margin: 0 -37em;
+}
+
 .introText {
     display: flex;
     justify-content: center;
@@ -178,3 +188,91 @@ main h1 {
     padding: 5em 0;
     flex-direction: column;
 }
+
+.blueSection {
+    background: var(--blue);
+}
+
+.lightBlueSection {
+    background: var(--cyan);
+}
+
+section {
+    display: flex;
+    grid-gap: 0em;
+    padding: 0 0em;
+}
+
+section p {
+    text-align: left;
+    width: 90%;
+}
+
+section .introText {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5em 0 5em 5em;
+    flex-direction: column;
+    width: 100%;
+}
+
+.textWrapper {
+    width: 95.7%;
+}
+
+.lightBlueSection .introText {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5em 0em 5em 5em;
+    flex-direction: column;
+    width: 100%;
+}
+
+.lightBlueSection hr {
+    border-color: var(--blue);
+}
+
+.bgColumn {
+    width: 100%;
+    background: url(./images/CreditPic2.jpg);
+    background-size: cover !important;
+}
+
+.lightBlueSection .bgColumn {
+    background: url(./images/blueCreditCard.jpg);
+    background-position: 50% 30%;
+}
+
+.whiteSection {
+    background: var(--babypowder);
+    color: var(--darkblue);
+}
+
+.whiteSection hr {
+    border-color: var(--blue);
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 2em;
+    padding-top: .2em;
+    background: var(--darkblue);
+    color: var(--babypowder);
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.bottomBar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5em;
+}
+
+
