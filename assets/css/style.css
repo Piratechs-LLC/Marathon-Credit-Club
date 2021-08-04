@@ -37,6 +37,7 @@ font-family: 'Unna', serif; */
 body {
     background: var(--darkblue);
     color: var(--babypowder);
+    overflow-x: hidden;
 }
 
 body, button {
@@ -71,9 +72,7 @@ header {
 }
 
 .mountainIsland {
-    background: linear-gradient(
-15deg
-,rgb(91 192 235 / 65%),rgb(40 106 140 / 65%)),url(./images/Island.jpg);
+    background: linear-gradient(15deg,rgb(91 192 235 / 65%),rgb(40 106 140 / 65%)),url(./images/Island.jpg);
     background-size: cover;
     background-position: 50% 57%;
 }
@@ -106,14 +105,15 @@ main {
     height: 2.5em;
     font-size: 1.7em;
     padding: 0;
-    background: linear-gradient( 
-90deg
- , var(--darkblue), white, white, white, var(--cyan));
+    background: linear-gradient( 90deg , var(--blue), white, white, white, var(--blue));
     grid-gap: .2em;
+    border-top: solid 5px white;
+    border-bottom: 5px solid #fff;
 }
 
 .buttonContainerHeader button {
     border: none;
+    background: var(--blue);
 }
 
 button {
@@ -124,9 +124,7 @@ button {
     font-size: .8em;
     font-weight: 600;
     transition: 150ms ease-in-out;
-    transform: skewx(
--20deg
-);
+    transform: skewx(-20deg);
     width: 100%;
     border: 4px solid #fff;
 }
